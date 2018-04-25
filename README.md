@@ -1,10 +1,9 @@
+# inventory-linking-imports-performance-test
 
-# customs-inventory-linking-imports-performance-test
+Performance tests for the `inventory-linking-imports` service.
 
- [ ![Download](https://api.bintray.com/packages/hmrc/releases/customs-inventory-linking-imports-performance-test/images/download.svg) ](https://bintray.com/hmrc/releases/customs-inventory-linking-imports-performance-test/_latestVersion)
+To run tests: sbt -Djava.io.tmpdir=${WORKSPACE}/tmp test
 
-This is a placeholder README.md for a new repository
+To run a smoke test: sbt -Dperftest.runSmokeTest=true -Djava.io.tmpdir=${WORKSPACE}/tmp test
 
-### License
-
-This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
+For more details about configuring or running:  https://github.com/hmrc/performance-test-runner
