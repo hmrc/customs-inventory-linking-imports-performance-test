@@ -9,16 +9,11 @@ import uk.gov.hmrc.performance.conf.ServicesConfiguration
 object ImportRequests extends ServicesConfiguration {
 
   val authBaseUrl = baseUrlFor("auth")
-  //val apiBaseUrl = baseUrlFor("customs-inventory-linking-imports")
   val apiBaseUrl = "http://customs-inventory-linking-imports.protected.mdtp"
-
 
   val successFulCode = 202
   val validateMovementBody = StringBody(ExampleImports.validImportsValidateMovementPayload.toString())
   val goodsArrivalBody = StringBody(ExampleImports.validImportsGoodsArrivalPayload.toString())
-
-  println("URL validation is " + apiBaseUrl + "/movement-validation")
-  println("Goods arrival is " + apiBaseUrl + "/arrival-notifications")
 
   private def headers(): Map[String, String] = Map(
     "Accept" -> "application/vnd.hmrc.1.0+xml",
