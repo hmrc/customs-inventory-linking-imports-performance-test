@@ -10,7 +10,7 @@ object ImportRequests extends ServicesConfiguration {
 
   val authBaseUrl = baseUrlFor("auth")
   //val apiBaseUrl = baseUrlFor("customs-inventory-linking-imports")
-  val apiBaseUrl = "http://customs-inventory-linking-imports.protected.mdt"
+  val apiBaseUrl = "http://customs-inventory-linking-imports.protected.mdtp"
 
 
   val successFulCode = 202
