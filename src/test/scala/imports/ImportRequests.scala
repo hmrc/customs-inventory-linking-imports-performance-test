@@ -15,6 +15,9 @@ object ImportRequests extends ServicesConfiguration {
   val validateMovementBody = StringBody(ExampleImports.validImportsValidateMovementPayload.toString())
   val goodsArrivalBody = StringBody(ExampleImports.validImportsGoodsArrivalPayload.toString())
 
+  println("URL validation is " + apiBaseUrl + "/movement-validation")
+  println("Goods arrival is " + apiBaseUrl + "/arrival-notifications")
+
   private def headers(): Map[String, String] = Map(
     "Accept" -> "application/vnd.hmrc.1.0+xml",
     "Content-Type" -> "application/xml; charset=UTF-8",
