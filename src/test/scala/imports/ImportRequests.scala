@@ -34,6 +34,5 @@ object ImportRequests extends ServicesConfiguration {
     .headers(headers())
     .body(goodsArrivalBody)
     .check(status.is(successFulCode))
-
 }
 
