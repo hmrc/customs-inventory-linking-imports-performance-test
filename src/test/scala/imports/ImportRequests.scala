@@ -9,7 +9,7 @@ import uk.gov.hmrc.performance.conf.ServicesConfiguration
 object ImportRequests extends ServicesConfiguration {
 
   val authBaseUrl = baseUrlFor("auth")
-  val apiBaseUrl = "http://customs-inventory-linking-imports.protected.mdtp"
+  val apiBaseUrl = baseUrlFor("inventory-linking-imports")
 
   val successFulCode = 202
   val validateMovementBody = StringBody(ExampleImports.validImportsValidateMovementPayload.toString())
