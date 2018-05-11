@@ -1,6 +1,6 @@
-package customs.imports
+package customs.inventory.linking.imports
 
-import customs.imports.ImportRequests._
+import customs.inventory.linking.imports.ImportRequests._
 import uk.gov.hmrc.performance.simulation.PerformanceTestRunner
 
 class ImportsSimulation extends PerformanceTestRunner {

@@ -1,6 +1,5 @@
-package customs.imports
+package customs.inventory.linking.imports
 
-import customs.declaration.ExampleImports
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder
