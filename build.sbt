@@ -1,4 +1,4 @@
-name := "inventory-linking-imports-performance-test"
+name := "customs-inventory-linking-imports-performance-test"
 
 version := "1.0"
 
