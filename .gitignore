@@ -21,5 +21,7 @@ node_modules/
 npm-debug.log
 yarn-debug.log
 yarn-error.log
-
+jmeter.log
+customs-declarations-performance-test.log
+customs-inventory-linking-imports-performance-test.log
     

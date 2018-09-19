@@ -9,5 +9,7 @@ class ImportsSimulation extends PerformanceTestRunner {
 
   setup("submit-goods-arrival", "Send goods arrival request") withRequests goodsArrivalRequest
 
+  setup("create-subscription-fields", "Subscription Fields") .withActions(clientIdUUID.actionBuilders:_*)withRequests(createFields,updateFieldsId)
+
   runSimulation()
 }
