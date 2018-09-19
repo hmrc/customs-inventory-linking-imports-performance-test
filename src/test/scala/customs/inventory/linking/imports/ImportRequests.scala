@@ -62,7 +62,7 @@ object ImportRequests extends ServicesConfiguration {
     .put(apiSubscriptionFieldsBaseUrl + "/field/application/${clientIds}/context/customs%2Finventory-linking-imports/version/1.0")
     .headers(Map("Content-Type" -> "application/json"))
     .body(StringBody(updateSubscriptionFieldsBody))
-    .check(status.is(201))
+    .check(status.is(200))
 
 }
 
