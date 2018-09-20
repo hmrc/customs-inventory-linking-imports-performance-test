@@ -19,7 +19,7 @@ object ImportRequests extends ServicesConfiguration {
     "Accept" -> "application/vnd.hmrc.1.0+xml",
     "Content-Type" -> "application/xml; charset=UTF-8",
     "Authorization" -> "Bearer CSP",
-    "X-Client-ID" -> "${csid}",
+    "X-Client-ID" -> "${ClientID}",
     "X-Badge-Identifier" -> "BADGEID123"
   )
 
