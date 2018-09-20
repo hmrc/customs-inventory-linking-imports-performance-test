@@ -22,22 +22,4 @@ object ExampleImports {
     </inventoryLinkingImportsGoodsArrival>
   }
 
-  val createsubscriptionFieldsBody: String = {
-    """{
-      "fields": {
-        "callbackUrl": "http://localhost:9826/customs-notifications-receiver-stub/pushnotifications",
-        "securityToken": "Basic qwerty12345qwerty12345"
-      }
-    }"""
-  }
-
-  val updateSubscriptionFieldsBody: String = {
-    """{
-      "fields": {
-        "callbackUrl": "http://localhost:9826/customs-notifications-receiver-stub/pushnotifications",
-        "securityToken": "${fieldsIds}"
-      }
-    }"""
-  }
-
 }
