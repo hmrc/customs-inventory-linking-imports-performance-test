@@ -23,8 +23,8 @@
 	<!-- Uncomment for logging ONLY FAILED HTTP request and responses -->
 		<!--<logger name="io.gatling.http.ahc.AsyncHandlerActor" level="DEBUG" />-->
 
-	<root level="TRACE">
-		<appender-ref ref="CONSOLE" />
+	<root level="DEBUG">
+		<appender-ref ref="FILE" />
 	</root>
 
 </configuration>

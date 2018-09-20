@@ -8,6 +8,8 @@ import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder
 import uk.gov.hmrc.performance.conf.ServicesConfiguration
 
+import scala.util.parsing.json.JSON
+
 object ImportRequests extends ServicesConfiguration {
 
   val authBaseUrl = baseUrlFor("auth")
@@ -57,6 +59,11 @@ object ImportRequests extends ServicesConfiguration {
     .check(savefieldsId)
     .check(saveClientId)
     .check(status.is(201))
+    .transformResponse {
+      case r =>
+        println("client id is -> \n" +  JSON.parseFull(r.body.string).getOrElse(0).asInstanceOf[Map[String, String]].get("clientId").fold("")(_.toString))
+        r
+    }
 
   def updateFieldsId = http("Update subscription fields")
     .put(apiSubscriptionFieldsBaseUrl + "/field/application/${clientIds}/context/customs%2Finventory-linking-imports/version/1.0")
