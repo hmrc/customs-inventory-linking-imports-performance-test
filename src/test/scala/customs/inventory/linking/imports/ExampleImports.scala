@@ -8,7 +8,7 @@ object ExampleImports {
     <InventoryLinkingImportsValidateMovementResponse xmlns="http://gov.uk/customs/inventoryLinkingImport/v1">
       <entryNumber>string</entryNumber>
       <entryVersionNumber>3</entryVersionNumber>
-      <inventoryConsignmentReference>string</inventoryConsignmentReference>
+      <inventoryConsignmentReference>123/-:ABC-a/-:ValidateMovement</inventoryConsignmentReference>
       <irc>str</irc>
     </InventoryLinkingImportsValidateMovementResponse>
   }
@@ -17,7 +17,7 @@ object ExampleImports {
     <inventoryLinkingImportsGoodsArrival xmlns="http://gov.uk/customs/inventoryLinkingImport/v1">
       <entryNumber>string</entryNumber>
       <entryVersionNumber>3</entryVersionNumber>
-      <inventoryConsignmentReference>string</inventoryConsignmentReference>
+      <inventoryConsignmentReference>123/-:ABC-a/-:GoodsArrival</inventoryConsignmentReference>
       <transportNationality>st</transportNationality>
     </inventoryLinkingImportsGoodsArrival>
   }
