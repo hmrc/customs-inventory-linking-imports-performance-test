@@ -4,6 +4,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder
 import uk.gov.hmrc.performance.conf.ServicesConfiguration
+import java.util.UUID.randomUUID
 
 object ImportRequests extends ServicesConfiguration {
 
@@ -20,7 +21,8 @@ object ImportRequests extends ServicesConfiguration {
     "Content-Type" -> "application/xml; charset=UTF-8",
     "Authorization" -> "Bearer CSP",
     "X-Client-ID" -> "${ClientID}",
-    "X-Badge-Identifier" -> "BADGEID123"
+    "X-Badge-Identifier" -> "BADGEID123",
+    "X-Correlation-ID" -> s"${randomUUID().toString}"
   )
 
   def validateMovementRequest(): HttpRequestBuilder = http("Validate Movement")
