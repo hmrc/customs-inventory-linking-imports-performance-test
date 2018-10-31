@@ -22,7 +22,7 @@ object ImportRequests extends ServicesConfiguration {
     "X-Client-ID" -> "${ClientID}",
     "X-Badge-Identifier" -> "BADGEID123",
     "X-Correlation-ID" -> s"${randomUUID().toString}",
-    "X-Submitter-Identifier" -> s"${Random.alphanumeric.take(17).mkString("").toString}"
+    "X-Submitter-Identifier" -> s"${Random.alphanumeric.take(17).mkString("")}"
   )
 
   def validateMovementRequest(): HttpRequestBuilder = http("Validate Movement")
