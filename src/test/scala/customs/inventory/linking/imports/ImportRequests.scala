@@ -36,4 +36,7 @@ object ImportRequests extends ServicesConfiguration {
     .headers(inventoryLinkingImportsheaders - "X-Correlation-ID")
     .body(goodsArrivalBody)
     .check(status.is(successFulCode))
+
 }
+
+
