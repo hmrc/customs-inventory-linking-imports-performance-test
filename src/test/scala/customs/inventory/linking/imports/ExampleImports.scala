@@ -16,8 +16,6 @@
 
 package customs.inventory.linking.imports
 
-import scala.xml.Elem
-
 object ExampleImports {
 
   val validImportsValidateMovementPayload = {
@@ -29,7 +27,7 @@ object ExampleImports {
     </InventoryLinkingImportsValidateMovementResponse>
   }
 
-  val validImportsGoodsArrivalPayload: Elem = {
+  val validImportsGoodsArrivalPayload = {
     <inventoryLinkingImportsGoodsArrival xmlns="http://gov.uk/customs/inventoryLinkingImport/v1">
       <entryNumber>string</entryNumber>
       <entryVersionNumber>3</entryVersionNumber>
